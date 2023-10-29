@@ -1,0 +1,21 @@
+.chat{
+
+  &__message{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    &:not(last-child){
+      margin-bottom: 10px;
+    }
+  }
+  &__ava{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__text{}
+}

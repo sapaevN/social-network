@@ -1,0 +1,11 @@
+.header{
+    grid-area: header;
+    background: green;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.header__logo{
+    font-size: 30px;
+    font-weight: 600;
+}

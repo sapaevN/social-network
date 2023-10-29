@@ -1,0 +1,44 @@
+.dialogs{
+  height: 100%;
+  &__title{
+    grid-area: title;
+    font-size: 25px;
+    margin-bottom: 20px;
+
+  }
+  &__block{
+    display:grid;
+    grid-template-areas:
+            'title title title'
+            'sidebar chat chat'
+            'empty inputBlock inputBlock '
+  ;
+    grid-template-columns: 2fr 6fr;
+    height: 100%;
+    grid-template-rows: 50px 1fr auto;
+  }
+  &__items{
+    border-top: 2px solid #4c4c4c;
+    grid-area: sidebar;
+    border-right: 1px solid #4c4c4c;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+  }
+}
+.chat{
+  grid-area: chat;
+  padding: 20px;
+  background: #4c4c4c;
+  height: 500px;
+  overflow: auto;
+}
+.empty{
+  grid-area: empty;
+}
+.inputBlock{
+  grid-area: inputBlock;
+  textarea{
+    width: 80%;
+  }
+}

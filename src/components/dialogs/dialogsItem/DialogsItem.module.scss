@@ -1,0 +1,24 @@
+
+.item{
+  a{
+    color: #4c4c4c;
+  }
+  font-size: 20px;
+  position: relative;
+  padding-left: 20px;
+  &::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: green;
+  }
+}
+
+.item .active{
+  color: gold;
+}

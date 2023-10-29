@@ -1,0 +1,48 @@
+.navbar{
+    grid-area: navbar;
+    background: green;
+    padding: 10px;
+}
+.navbar__list{
+    list-style: none;
+}
+.navbar__item{
+    font-family: sans-serif;
+    font-size: 25px;
+    &:last-child{
+        margin-top: 50px;
+        font-size: 32px;
+    }
+}
+a{
+    color: white;
+}
+
+a.active
+    {
+    color: gold;
+}
+
+.friends{
+    margin-top: 7px;
+    display: flex;
+    gap: 15px;
+    .friend{
+        max-width: 50px;
+        overflow: hidden;
+        &__logo{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: gold;
+        }
+        &__name{
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+}
+
+
+
+
