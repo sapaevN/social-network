@@ -2,6 +2,7 @@ import React from "react";
 import s from "./Post.module.scss"
 
 const Post = (props) => {
+
     return (
         <div className={s.post}>
             <div className={s.post__logo}></div>

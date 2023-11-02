@@ -9,23 +9,16 @@ import {changeDialogInputAC, addMessageAC} from "../../redux/reducers/dialogsPag
 
 const Dialogs = (props)=>{
 
-    const dialogsElements = props.dialogsPage.dialogsData.map((element) =>{
-        return  <DialogsItem name={element.name} path={element.path}/>
-    })
-    const messageElements = props.dialogsPage.messagesData.map(message=>{
-        return  <Message message={message.message}/>
-    })
+
     let newText = React.createRef()
 
     const addNewText = () =>{
-        let action = addMessageAC()
-        props.dispatch(action)
+        props.onAddNewText()
         newText.current.value = ''
     }
     const changeDialogInput = ()=>{
         let value = newText.current.value
-        let action = changeDialogInputAC(value)
-        props.dispatch(action)
+        props.onChangeDialogInput(value)
     }
 
     return(
@@ -34,10 +27,10 @@ const Dialogs = (props)=>{
             <div className={s.dialogs__block}>
                 <div className={s.dialogs__title}>Dialogs</div>
                 <ul className={s.dialogs__items}>
-                    {dialogsElements}
+                    {props.dialogsElements}
                 </ul>
                 <div className={`${s.dialogs__chat} ${s.chat}`}>
-                    {messageElements}
+                    {props.messageElements}
                 </div>
 
                 <div className={s.inputBlock}>

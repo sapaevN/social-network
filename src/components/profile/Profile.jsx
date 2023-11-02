@@ -3,17 +3,14 @@ import s from "./Profile.module.scss"
 import MyPosts from "./myPosts/MyPosts";
 import ProfileInfo from "./profileInfo/ProfileInfo";
 import {onChangePostInputValue} from "../../redux/state";
+import MyPostsContainer from "./myPosts/MyPostsContainer";
 
 const Profile = (props) => {
 
     return (
         <div className={s.profile}>
             <ProfileInfo/>
-            <MyPosts
-                postData={props.profilePage.postsData}
-                dispatch={props.dispatch}
-                postInputValue={props.postInputValue}
-            />
+            <MyPostsContainer/>
         </div>
     );
 }

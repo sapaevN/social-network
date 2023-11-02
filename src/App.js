@@ -9,9 +9,11 @@ import Profile from "./components/profile/Profile";
 import Dialogs from "./components/dialogs/Dialogs";
 import Friends from "./components/friends/Friends";
 import {onChangePostInputValue} from "./redux/state";
+import DialogsContainer from "./components/dialogs/DialogsContainer";
 
 
 const App = (props) => {
+
     return (
 
             <div className='wrapper'>
@@ -20,23 +22,9 @@ const App = (props) => {
                     <Navbar/>
                     <div className="content">
                         <Routes>
-                            <Route path='/profile' element={
-                                <Profile
-                                    profilePage={props.state.profilePage}
-                                    dispatch={props.dispatch}
-                                    postInputValue={props.state.profilePage.postInputValue}
-                                />}
-                            />
-                            <Route path='/dialogs' element={
-                                <Dialogs
-                                    dialogsPage={props.state.dialogsPage}
-                                    dispatch={props.dispatch}
-                                    newInputValue={props.state.dialogsPage.newInputValue}
-                                />}
-                            />
-                            <Route path='/friends' element={
-                                <Friends friendsPage={props.state.friendsPage}/>}
-                            />
+                            <Route path='/profile' element={<Profile />}/>
+                            <Route path='/dialogs' element={<DialogsContainer />}/>
+                            <Route path='/friends' element={<Friends />}/>
                         </Routes>
                     </div>
                 </div>

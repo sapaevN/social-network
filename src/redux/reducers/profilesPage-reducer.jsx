@@ -1,8 +1,17 @@
+import React from "react";
+
 const ADD_POST = "ADD-POST"
 const ON_CHANGE_POST_INPUT_VALUE = "ON-CHANGE-POST-INPUT-VALUE"
 
-const profilePageReducer = (state, action) => {
-    switch (action.type){
+let initialState = {
+    postsData: [
+        {id: 1, likesCount: "123", message: "some message"},
+        {id: 2, likesCount: "123", message: "hello"},
+    ],
+    postInputValue: ''
+}
+export const profilePageReducer = (state = initialState, action) => {
+    switch (action.type) {
         case ADD_POST:
             let newPost = {
                 id: 7,
@@ -22,5 +31,5 @@ const profilePageReducer = (state, action) => {
 
 export default profilePageReducer
 
-export const addPostAC = () => ({type:ADD_POST})
-export const onChangeInputValueAC = (newValue) => ({type:ON_CHANGE_POST_INPUT_VALUE, newValue:newValue})
+export const addPostAC = () => ({type: ADD_POST})
+export const onChangeInputValueAC = (newValue) => ({type: ON_CHANGE_POST_INPUT_VALUE, newValue: newValue})

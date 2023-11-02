@@ -4,16 +4,19 @@ import Post from "./post/Post";
 import {addPostAC, onChangeInputValueAC} from "../../../redux/reducers/profilesPage-reducer";
 
 
-const MyPosts = (props) => {let postElements = props.postData.map(post => <Post message={post.message} likesCount={post.likesCount}/>)
+const MyPosts = (props) => {
+
+    let postElements = props.postsData.map(post => <Post message={post.message} likesCount={post.likesCount}/>)
+
+
     const newPostElement = React.createRef()
     let addPost = () => {
-        const action = addPostAC()
-        props.dispatch(action)
+       props.addPost()
+        newPostElement.current.value = ''
     }
     let newPostInputValue = () => {
         let newValue = newPostElement.current.value
-        const action = onChangeInputValueAC(newValue)
-        props.dispatch(action)
+        props.newPostInputValue(newValue)
     }
 
     return (
