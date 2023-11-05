@@ -1,12 +1,10 @@
 import React from "react";
 import s from "./MyPosts.module.scss"
 import Post from "./post/Post";
-import {addPostAC, onChangeInputValueAC} from "../../../redux/reducers/profilesPage-reducer";
-
 
 const MyPosts = (props) => {
 
-    let postElements = props.postsData.map(post => <Post message={post.message} likesCount={post.likesCount}/>)
+    let postElements = props.profilePage.postsData.map(post => <Post message={post.message} likesCount={post.likesCount}/>)
 
 
     const newPostElement = React.createRef()
@@ -22,7 +20,7 @@ const MyPosts = (props) => {
     return (
         <div className={s.mypost}>
             <form >
-                <textarea ref={newPostElement} onChange={newPostInputValue}  value={props.postInputValue}></textarea>
+                <textarea ref={newPostElement} onChange={newPostInputValue}  value={props.profilePage.postInputValue}></textarea>
                 <button type="button" onClick={addPost} >add post</button>
             </form>
             <div className={s.posts}>
