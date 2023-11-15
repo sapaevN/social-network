@@ -25,3 +25,17 @@
     margin-top: 20px;
   }
 }
+
+.pagination {
+  max-width: 500px;
+  overflow: auto;
+  display: flex;
+  gap: 5px;
+  cursor: pointer;
+  padding: 3px;
+  &__currentPage{
+    font-weight: bold;
+    transform: scale(1.15);
+    transition: all 0.1s ease-in;
+  }
+}

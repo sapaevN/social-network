@@ -1,15 +1,18 @@
 import React from "react";
-import s from "./ProfileInfo.module.scss"
-import ava from "../../../image/avaKotVSapogah.jpg"
-const ProfileInfo = () => {
+import Preloader from "../../../commons/Preloader";
+const ProfileInfo = (props) => {
+    if(!props.profile){
+        return <Preloader/>
+    }
+
     return (
        <>
            <div>
-               <img src={ava} alt='...'></img>
+               <img src={props.profile.photos.large} alt='...'></img>
            </div>
            <div>
                <div>Sapaev Nuriddin</div>
-               <div>My Birthday is 20th june</div>
+               <div>{props.profile.aboutMe}</div>
            </div>
        </>
     );

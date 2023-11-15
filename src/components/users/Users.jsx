@@ -1,40 +1,51 @@
+import s from "./Users.module.scss";
+import ava from "../../assets/images/avatar.png";
 import React from "react";
-import s from "./Users.module.scss"
-import axios from "axios";
-import ava from "../../assets/images/avatar.png"
+import {NavLink} from "react-router-dom";
+import { userAPI} from "../../dal/api";
 
 
-class UsersC extends React.Component {
-    URL = "https://social-network.samuraijs.com/api/1.0/users"
-    componentDidMount() {
+const Users = (props) => {
 
-            axios.get(this.URL)
-                .then(response => {
-                    const users = response.data.items
-                    this.props.setUsers(users)
-                    console.log(response)
-                })
+    let pagesCount = Math.ceil(props.usersCount / props.pageSize)
+    let pages = []
+    for (let i = 1; i <= pagesCount; i++) {
+        pages.push(i);
     }
 
-    render(){
-        return (<>
+
+    return (
+
+        <>
+            <div className={s.pagination}>
+                {
+                    pages.map(p => {
+                        return <span
+                            className={props.currentPage === p ? s.pagination__currentPage : s.pagination__page}
+                            onClick={() => {
+                                props.onPageChanged(p)
+                            }}>{p}</span>
+                    })
+                }
+            </div>
 
             <div>
                 {
-                    this.props.users.map((u) => <div key={u.id} className={s.user}>
+                    props.users.map((u) => <div key={u.id} className={s.user}>
 
                             <div className={s.user__head}>
-                                <div className={s.user__ava}>
-                                    <img src={u.photos.small ? u.photos.small : ava } alt="..."/>
-                                </div>
+                                <NavLink to={`/profile/${u.id}`} onClick={()=>{props.setUserID(u.id)}} >
+                                    <div className={s.user__ava}>
+                                        <img src={u.photos.small ? u.photos.small : ava} alt="..."/>
+                                    </div>
+                                </NavLink>
+
                                 <div className={s.user__followed}>
                                     {u.followed
-                                        ? <button type="button" onClick={() => {
-                                            this.props.onUnFollow(u.id)
-                                        }}>unfollow</button>
-                                        : <button type="button" onClick={() => {
-                                            this.props.onfollow(u.id)
-                                        }}>follow</button>
+                                        ? <button disabled={props.isFollowingProgress.some(id => id === u.id)} type="button"
+                                                  onClick={() => {props.unfollow(u.id)}}>unfollow</button>
+                                        : <button disabled={props.isFollowingProgress.some(id => id === u.id)} type="button"
+                                                  onClick={() => {props.follow(u.id)}}>follow</button>
                                     }
                                 </div>
                             </div>
@@ -42,10 +53,7 @@ class UsersC extends React.Component {
                                 <div className={s.user__name}>
                                     {u.name}
                                 </div>
-                                {/* <div className={s.user__location}>
-                                <span>{u.location.city}</span>
-                                <span>{u.location.country}</span>
-                            </div>*/}
+
                                 <div className={s.user__status}>
                                     {u.status}
                                 </div>
@@ -56,9 +64,6 @@ class UsersC extends React.Component {
             </div>
 
         </>)
-    }
-
 }
 
-
-export default UsersC
+export default Users
