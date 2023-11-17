@@ -15,8 +15,8 @@ export const userAPI = {
             .then(response=> response.data)
     },
     getProfile(id=2){
-        return AxiosInstance.get(`profile/${id}`)
-            .then(response => response.data)
+        console.warn("Please use profileAPI")
+        return profileAPI.getProfile(id)
     },
     follow(id){
         return AxiosInstance.post(`follow/${id}`)
@@ -32,3 +32,16 @@ export const userAPI = {
     }
 }
 
+
+export const profileAPI = {
+    getProfile:(userID)=>{
+        return AxiosInstance.get(`profile/${userID}`)
+            .then(response => response.data)
+    },
+    getStatus:(userID)=>{
+        return AxiosInstance.get(`profile/status/${userID}`)
+    },
+    updateStatus:(status)=>{
+         return AxiosInstance.put(`/profile/status/`,{status:status})
+    },
+}
