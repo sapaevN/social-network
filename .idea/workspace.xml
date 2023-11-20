@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5a927a0e-13d5-47cb-8032-9365b2d7a149" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/dialogs/DialogsContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profile/ProfileContainter.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/User.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/Users.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/users/UsersContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/del/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile/myPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/myPosts/MyPosts.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/dialogsPage-reducer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/profilesPage-reducer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2XdWBYJWAdSWW5ugBDAtkiy46fX" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ecfc4b96&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Practice/reakt/socialNetwork/my-app/src/components/users&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.2.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Practice\reakt\socialNetwork\my-app\src\components\users" />
+      <recent name="E:\Practice\reakt\socialNetwork\my-app\src\redux" />
+      <recent name="E:\Practice\reakt\socialNetwork\my-app\src\components\profile" />
+      <recent name="E:\Practice\reakt\socialNetwork\my-app\src\components\dialogs" />
+      <recent name="E:\Practice\reakt\socialNetwork\my-app\src\components\header" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Practice\reakt\socialNetwork\my-app\src\redux" />
+      <recent name="E:\Practice\reakt\socialNetwork\my-app/src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a927a0e-13d5-47cb-8032-9365b2d7a149" name="Changes" comment="" />
+      <created>1698959302182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698959302182</updated>
+      <workItem from="1698959303383" duration="3164000" />
+      <workItem from="1699017297018" duration="2913000" />
+      <workItem from="1699102616128" duration="13359000" />
+      <workItem from="1699186082017" duration="12343000" />
+      <workItem from="1699281510887" duration="7660000" />
+      <workItem from="1699342796185" duration="23130000" />
+      <workItem from="1699542273850" duration="10271000" />
+      <workItem from="1699640526384" duration="5947000" />
+      <workItem from="1699732116867" duration="4735000" />
+      <workItem from="1699761133315" duration="657000" />
+      <workItem from="1699790041722" duration="4880000" />
+      <workItem from="1699863817327" duration="2183000" />
+      <workItem from="1699889453319" duration="13618000" />
+      <workItem from="1699980044495" duration="102000" />
+      <workItem from="1699980170124" duration="1823000" />
+      <workItem from="1699990453726" duration="4418000" />
+      <workItem from="1700019435288" duration="1243000" />
+      <workItem from="1700064100738" duration="5324000" />
+      <workItem from="1700072792853" duration="2676000" />
+      <workItem from="1700156320424" duration="9132000" />
+      <workItem from="1700236955407" duration="2174000" />
+      <workItem from="1700240581404" duration="9364000" />
+      <workItem from="1700330630806" duration="5775000" />
+      <workItem from="1700402904428" duration="12869000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

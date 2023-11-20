@@ -3,29 +3,29 @@ import s from "./Dialogs.module.scss"
 import DialogsItem from "./dialogsItem/DialogsItem";
 import Message from "./message/Message";
 import dialogsItem from "./dialogsItem/DialogsItem";
-import {changeDialogInputAC, addMessageAC} from "../../redux/reducers/dialogsPage-reducer";
+import {changeDialogInputAC, addMessageAC} from "../../redux/dialogsPage-reducer";
 
 
 
 const Dialogs = (props)=>{
 
-    const dialogsElements = props.dialogsPage.dialogsData.map((element) =>{
+    const dialogsElements = props.dialogsData.map((element) =>{
         return  <DialogsItem name={element.name} path={element.path}/>
     })
-    const messageElements = props.dialogsPage.messagesData.map(message=>{
+    const messageElements = props.messagesData.map(message=>{
         return  <Message message={message.message}/>
     })
     let newText = React.createRef()
 
     const addNewText = () =>{
-        let action = addMessageAC()
-        props.dispatch(action)
+        if(props.newInputValue.trim()){
+            props.addMessage()
+        }
         newText.current.value = ''
     }
     const changeDialogInput = ()=>{
         let value = newText.current.value
-        let action = changeDialogInputAC(value)
-        props.dispatch(action)
+        props.changeDialogInput(value)
     }
 
     return(

@@ -2,7 +2,7 @@ import React from "react";
 import s from "./Profile.module.scss"
 import MyPosts from "./myPosts/MyPosts";
 import ProfileInfo from "./profileInfo/ProfileInfo";
-import {onChangePostInputValue} from "../../redux/state";
+
 
 const Profile = (props) => {
 
