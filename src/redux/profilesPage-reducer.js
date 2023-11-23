@@ -1,5 +1,8 @@
+import {profileAPI} from "../del/api";
+
 const ADD_POST = "ADD-POST"
 const ON_CHANGE_POST_INPUT_VALUE = "ON-CHANGE-POST-INPUT-VALUE"
+const SET_PROFILE = "SET-PROFILE"
 
 
 const initialState = {
@@ -7,14 +10,14 @@ const initialState = {
         {id: 1, likesCount: "123", message: "some message"},
         {id: 2, likesCount: "123", message: "hello"},
     ],
-    postInputValue: ''
+    postInputValue: '',
+    profile: null/*{photos:{large:"",small:''}}*/
 }
-
 
 
 const profilePageReducer = (state = initialState, action) => {
     const stateCopy = JSON.parse(JSON.stringify(state))
-    switch (action.type){
+    switch (action.type) {
         case ADD_POST:
             let newPost = {
                 id: 7,
@@ -27,11 +30,22 @@ const profilePageReducer = (state = initialState, action) => {
         case ON_CHANGE_POST_INPUT_VALUE:
             stateCopy.postInputValue = action.newValue
             return stateCopy
+        case SET_PROFILE:
+            stateCopy.profile = action.profile
+            return stateCopy
         default:
             return stateCopy;
     }
 }
 
 export default profilePageReducer
-export const addPostAC = () => ({type:ADD_POST})
-export const onChangeInputValueAC = (newValue) => ({type:ON_CHANGE_POST_INPUT_VALUE, newValue:newValue})
+export const setProfileAC = (profile) =>({type:SET_PROFILE,profile})
+export const addPostAC = () => ({type: ADD_POST})
+
+
+export const getProfileTC = (userID) => (dispatch) => {
+    profileAPI.getProfile(userID).then(data =>{
+        dispatch(setProfileAC(data))
+    })
+}
+export const onChangeInputValueAC = (newValue) => ({type: ON_CHANGE_POST_INPUT_VALUE, newValue: newValue})

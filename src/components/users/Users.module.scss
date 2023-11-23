@@ -1,6 +1,23 @@
-.avaImage{
+.avaImage {
   width: 130px;
   height: 130px;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.pagination {
+  display: flex;
+  width: 500px;
+  overflow: auto;
+  gap: 5px;
+
+  li {
+    a {
+      color: black;
+    }
+  }
+}
+
+.selected {
+  font-weight: bold;
 }

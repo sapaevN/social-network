@@ -2,8 +2,7 @@ import React from "react";
 import s from "./Dialogs.module.scss"
 import DialogsItem from "./dialogsItem/DialogsItem";
 import Message from "./message/Message";
-import dialogsItem from "./dialogsItem/DialogsItem";
-import {changeDialogInputAC, addMessageAC} from "../../redux/dialogsPage-reducer";
+import {Navigate} from "react-router-dom";
 
 
 
@@ -27,6 +26,9 @@ const Dialogs = (props)=>{
         let value = newText.current.value
         props.changeDialogInput(value)
     }
+
+    if(!props.isAuth) return <Navigate to="/login"/>
+
 
     return(
         <div className={s.dialogs}>

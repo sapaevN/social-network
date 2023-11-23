@@ -8,8 +8,30 @@ const instance = axios.create({
 
 
 export const userAPI = {
-    getUsers: () => {
-       return instance.get(`/users`)
+    getUsers: (page= 1) => {
+       return instance.get(`/users?count=5&page=${page}`)
             .then(response => response.data)
     },
+    follow:(userID) => {
+        return instance.post(`/follow/${userID}`)
+            .then(response => response.data)
+    },
+    unfollow:(userID) => {
+        return instance.delete(`/follow/${userID}`)
+            .then(response => response.data)
+    }
+}
+
+export const profileAPI = {
+    getProfile:(userID) => {
+        return instance.get(`/profile/${userID}`)
+            .then(response => response.data)
+    }
+}
+
+export const authAPI  = {
+    authMe: ()=>{
+        return instance.get(`/auth/me`)
+            .then(response => response.data)
+    }
 }
