@@ -5,24 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a927a0e-13d5-47cb-8032-9365b2d7a149" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commons/defAva.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/commons/preloader.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/commons/formsControls/FormsControls.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/commons/formsControls/FormsControls.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/profile/profileInfo/profileStatus/profileStatus.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withAuthNavigate.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/validators.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/defAva.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/defAva.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commons/preloader.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/commons/preloader.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dialogs/Dialogs.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dialogs/DialogsContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/profile/ProfileContainter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/ProfileContainter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/profile/myPosts/MyPosts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/myPosts/MyPosts.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/profile/profileInfo/ProfileInfo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/profile/profileInfo/ProfileInfo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/users/Users.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/Users.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/users/UsersContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/Users.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/Users.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/del/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/del/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/dialogsPage-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogsPage-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/profilesPage-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profilesPage-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/users-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/users-reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,41 +46,48 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
   <component name="ProjectId" id="2XdWBYJWAdSWW5ugBDAtkiy46fX" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;refactorBranch&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Practice/reakt/socialNetwork/my-app/src/components/users&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.2.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "refactorBranch",
+    "last_opened_file_path": "E:/Practice/reakt/socialNetwork/my-app/src/components/commons/formsControls",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.2.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Practice\reakt\socialNetwork\my-app\src\components\commons\formsControls" />
       <recent name="E:\Practice\reakt\socialNetwork\my-app\src\components\users" />
       <recent name="E:\Practice\reakt\socialNetwork\my-app\src\redux" />
       <recent name="E:\Practice\reakt\socialNetwork\my-app\src\components\profile" />
       <recent name="E:\Practice\reakt\socialNetwork\my-app\src\components\dialogs" />
-      <recent name="E:\Practice\reakt\socialNetwork\my-app\src\components\header" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Practice\reakt\socialNetwork\my-app\src\components\commons\formsControls" />
+      <recent name="E:\Practice\reakt\socialNetwork\my-app\src\components" />
       <recent name="E:\Practice\reakt\socialNetwork\my-app\src\redux" />
       <recent name="E:\Practice\reakt\socialNetwork\my-app/src" />
     </key>
@@ -115,7 +127,14 @@
       <workItem from="1700496509242" duration="11210000" />
       <workItem from="1700589749030" duration="11267000" />
       <workItem from="1700665637966" duration="14494000" />
-      <workItem from="1700758577307" duration="3722000" />
+      <workItem from="1700758577307" duration="4999000" />
+      <workItem from="1700851639607" duration="6750000" />
+      <workItem from="1700937582475" duration="4071000" />
+      <workItem from="1701025171250" duration="7832000" />
+      <workItem from="1701110787033" duration="1285000" />
+      <workItem from="1701192615204" duration="2722000" />
+      <workItem from="1701445425741" duration="14288000" />
+      <workItem from="1701594251432" duration="9299000" />
     </task>
     <servers />
   </component>

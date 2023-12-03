@@ -1,4 +1,4 @@
-const CHANGE_DIALOG_INPUT = "CHANGE-DIALOG-INPUT"
+
 const ADD_MESSAGE = "ADD-MESSAGE"
 
 
@@ -15,9 +15,8 @@ const initialState = {
         {id: 2, message: "Hello"},
         {id: 3, message: "Yo"},
         {id: 4, message: "YOYOY"},
-
     ],
-    newInputValue:""
+
 }
 
  const dialogsPageReducer = (state = initialState,action) => {
@@ -28,13 +27,10 @@ const initialState = {
         case ADD_MESSAGE:
             let newMessage = {
                 id: 5,
-                message:stateCopy.newInputValue
+                message: action.text
             }
             stateCopy.messagesData.push(newMessage)
             stateCopy.newInputValue = ''
-            return stateCopy
-        case CHANGE_DIALOG_INPUT:
-            stateCopy.newInputValue = action.newText
             return stateCopy
         default:
             return stateCopy
@@ -42,5 +38,4 @@ const initialState = {
 }
 
 export default dialogsPageReducer
-export const changeDialogInputAC = (newText)  =>({type:CHANGE_DIALOG_INPUT,newText:newText})
-export const addMessageAC = () => ({type:ADD_MESSAGE})
+export const addMessageAC = (text) => ({type:ADD_MESSAGE,text})

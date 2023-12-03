@@ -1,29 +1,26 @@
 
-import {changeDialogInputAC, addMessageAC} from "../../redux/dialogsPage-reducer";
+
 import {connect} from "react-redux";
 import Dialogs from "./Dialogs";
+import {compose} from "redux";
+import withAuthNavigate from "../../hoc/withAuthNavigate";
+import {addMessageAC} from "../../redux/dialogsPage-reducer";
 
 
 const mapStateToProps = (state) => {
     return {
         dialogsData: state.dialogsPage.dialogsData,
         messagesData:state.dialogsPage.messagesData,
-        newInputValue:state.dialogsPage.newInputValue,
         isAuth:state.auth.isAuth
     }
 }
 const mapDispatchToProps = (dispatch) => {
     return {
-        addMessage:()=>{
-            dispatch(addMessageAC())
-        },
-        changeDialogInput:(value)=>{
-            dispatch(changeDialogInputAC(value))
+        addMessage:(text)=>{
+            dispatch(addMessageAC(text))
         }
-
     }
 }
 
-const DialogsContainer = connect(mapStateToProps, mapDispatchToProps)(Dialogs)
+export default compose(connect(mapStateToProps, mapDispatchToProps),withAuthNavigate)(Dialogs)
 
-export default DialogsContainer

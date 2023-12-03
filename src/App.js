@@ -24,11 +24,12 @@ const App = (props) => {
                     <Navbar/>
                     <div className="content">
                         <Routes>
-                            <Route path='/profile/:userID?' element={<ProfileContainter/>}/>
+
+                            <Route path='/profile/:userID?'  element={<ProfileContainter/>}/>
                             <Route path='/dialogs' element={<DialogsContainer/>}/>
                             <Route path="/users" element={<Users/>}/>
                             <Route path='/friends' element={<Friends />}/>
-                            <Route path='/login' element={<Login/>} />
+                            <Route path='login' element={<Login/>}/>
                         </Routes>
                     </div>
                 </div>

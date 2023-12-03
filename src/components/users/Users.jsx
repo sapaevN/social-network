@@ -3,7 +3,7 @@ import {followTC, getUsersTC, isDisabledButtonAC, setCurrentPageTC, unfollowTC} 
 import React from "react";
 import ava from "../../image/ava.png"
 import s from "./Users.module.scss"
-import Preloader from "../../commons/preloader";
+import Preloader from "../commons/preloader";
 import {NavLink} from "react-router-dom";
 import {getProfileTC} from "../../redux/profilesPage-reducer";
 
@@ -31,7 +31,6 @@ class Users extends React.Component {
                             })
                         }
                     </ul>
-
                     {
                         this.props.users.map(u => {
                             return <div key={u.id}>
@@ -43,8 +42,8 @@ class Users extends React.Component {
                                                  src={u.photos.small ? u.photos.small : ava}/>
                                         </NavLink>
                                         <span> {u.name}</span>
-                                    </div>
 
+                                    </div>
                                     {
                                         u.followed ? <button disabled={this.props.isDisabledButton.some(id=> id === u.id)} type="button" onClick={() => {
 
@@ -59,9 +58,7 @@ class Users extends React.Component {
                                     }
 
                                 </div>
-
                             </div>
-
                         })
                     }
                 </>

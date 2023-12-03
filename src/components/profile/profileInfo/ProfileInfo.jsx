@@ -1,6 +1,7 @@
 import React from "react";
-import Preloader from "../../../commons/preloader";
+import Preloader from "../../commons/preloader";
 import ava from "../../../image/ava.png"
+import ProfileStatus from "./profileStatus/profileStatus";
 
 const ProfileInfo = (props) => {
 
@@ -14,7 +15,7 @@ const ProfileInfo = (props) => {
                 </div>
                 <div>
                     <div>{props.profile.fullName}</div>
-                    <div>My Birthday is 20th june</div>
+                    <ProfileStatus status={props.status} setStatus={props.setStatus} />
                 </div>
             </>
         );
