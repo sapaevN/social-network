@@ -1,6 +1,5 @@
-
 import React from "react";
-import { Route, Routes} from "react-router-dom";
+import {Route, Routes} from "react-router-dom";
 
 import './App.css';
 import Header from "./components/header/Header";
@@ -12,11 +11,10 @@ import Users from "./components/users/Users";
 import Login from "./components/login/Login";
 
 
+class App extends React.Component {
+    render() {
 
-
-const App = (props) => {
-
-    return (
+        return (
 
             <div className='wrapper'>
                 <div className="container">
@@ -25,17 +23,18 @@ const App = (props) => {
                     <div className="content">
                         <Routes>
 
-                            <Route path='/profile/:userID?'  element={<ProfileContainter/>}/>
+                            <Route path='/profile/:userID?' element={<ProfileContainter/>}/>
                             <Route path='/dialogs' element={<DialogsContainer/>}/>
                             <Route path="/users" element={<Users/>}/>
-                            <Route path='/friends' element={<Friends />}/>
+                            <Route path='/friends' element={<Friends/>}/>
                             <Route path='login' element={<Login/>}/>
                         </Routes>
                     </div>
                 </div>
             </div>
 
-    );
+        );
+    }
 }
 
 export default App;
